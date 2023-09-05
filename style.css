@@ -1,0 +1,574 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0rem;
+    padding: 0rem;
+   width: 100%;
+    height: 100rem;
+    background:linear-gradient(to left,rgb(238, 236, 233),rgba(212, 192, 16, 0.199));
+}
+html{
+    font-size: 1rem;
+    margin: 0rem;
+    padding: 0rem;
+
+}
+header::before
+{
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0px;
+    width: 100%;
+    height: 32rem;
+    z-index: -3;
+    opacity: 0.8;
+    background: url("image2.jpg") no-repeat center center/cover;
+    margin: 0rem;
+
+}
+header
+{    
+    display: flex;
+    width: 100%;
+    height: 26.7rem;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 87px;
+}
+#top
+{   display: flex;
+    position: relative;
+    height: 5rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Kanit','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+#top::before
+{
+    position: absolute;
+    content: "";
+    width:100%;
+    height: 4.7rem;
+    z-index: -2;
+    opacity: 0.5;
+    /* background: url("/img/gradient.jpg") no-repeat center center/cover; */
+    background-color: rgb(138, 129, 111);
+
+}
+#top p{
+    margin-left:0rem;
+}
+#top img
+{
+    height: 3rem;
+    width: 3rem;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    filter: invert(100%);
+    animation: education 1s ease-in 1s 1 forwards;
+    visibility: hidden;
+}
+#top ul
+{   
+    
+    width: 59rem;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0rem;
+    margin-right: 10.5rem;
+    padding: 0rem;
+    font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.wave
+{
+    position: absolute;
+    height: 100%;
+    width:0%;
+    top:0;
+    left:-3rem;
+    transition:all 0.7s;
+    z-index:-1;
+    opacity:1;
+    border-radius: 10px;
+    
+    
+}
+.wave::before
+{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height:100%;
+    top:0;
+    background-color:cyan;
+    border-radius: 10px;
+    
+    
+}
+
+.nav{
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(0, 255, 255, 0.767);
+    height: 2.5rem;
+    width: 6rem;
+    padding: 0.6rem 1rem;
+    border:1px solid rgba(0, 255, 255, 0.767);
+    border-radius: 10px;
+    background-color: rgba(68, 85, 81, 0.767);
+    overflow: hidden;
+    bottom: 1rem;
+    transition: color 0.5s;
+    
+}
+.nav:hover
+{
+    box-shadow: 2px 2px 15px 3px rgba(71, 172, 172, 0.5);
+    color: white;
+
+   
+    
+}
+.nav:hover .wave{
+   width: 100%;
+}
+
+
+
+@keyframes education {
+    
+    from {
+        visibility: visible;
+       transform: scale(0.2) ;
+    
+    }
+
+    to {
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+#cross
+{
+    filter: invert(100%);
+    margin:0rem;
+    padding:0rem;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    right: 12px;
+    bottom: 261px;
+}
+#cross2
+{
+    filter: invert(100%);
+    margin:0rem;
+    padding:0rem;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    right: 87px;
+    bottom: 161px;
+}
+#learn
+{
+    padding-left: 3.2rem; 
+}
+#stop
+{
+    padding-left: 3.2rem;
+}
+#container span
+{
+    color: cyan;
+}
+.pri{
+    margin:0.5rem 0px;
+}
+#decor
+{
+     margin-top: 2rem;
+     margin-bottom: 0rem;
+    font-size: 15px;
+    padding-left: 35px;
+    font-weight:300;
+    
+    
+}
+#above
+{
+    margin: 0rem;
+}
+#under{
+    width: 15.9rem;
+    margin: 0.2rem 0.5rem;
+    margin-left: 2rem;
+}
+#container
+{   
+    margin-top: 0.3rem;
+    height: 26rem;
+    width: 27rem;
+    /* border: 1px solid red; */
+    
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-weight:bold;
+    font-family: 'Lora', serif;
+    position: relative;
+    left: 90px;
+    
+}
+#details
+{   
+    margin-top: 1rem;
+    height: 43rem;
+    width:25%;
+    /* border: 1px solid red; */
+    position: relative;
+    color: white;
+    font-size: 40px;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+}
+#details img
+{
+    filter: invert(100%);
+    height: 60px;
+    width: 60px;
+    position: relative;
+    top: -93px;
+    left: 136px;
+    cursor: pointer;
+   
+    
+
+}
+#details img:hover{
+    animation:wolf-rot 1s ease-in 0s 1 forwards;
+    
+}
+@keyframes wolf-rot {
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to
+    {
+        transform: scale(1.4) rotate(360deg);
+    }
+}
+#wolf
+{
+    margin-left: 5.800000000000001rem;
+    margin-top: 4rem;
+}
+#details span
+{
+    margin-left: 3.7rem;
+    
+}
+#details::before
+{
+    position: absolute;
+    content: "";
+    height: 43rem;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-color: #043c3c;
+    margin: 0rem;
+
+}
+#prim
+{
+    margin: 1rem 2rem;
+    position: relative;
+    bottom: 5rem;
+}
+.speak
+{
+margin:0.3rem;
+font-size: 15px;
+text-align: center;
+font-family: 'Lora', serif;
+font-weight: 100;
+font-weight: 100;
+position: relative;
+bottom: 85px;
+color: rgb(223, 216, 216);
+}
+#sec
+{
+    margin: 1rem 2rem;
+    position: relative;
+    bottom: 5.5rem;
+}
+form
+{   display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    font-family: 'Kanit','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+    bottom:6rem;
+    padding: 1rem 2rem;
+    letter-spacing: 2px;
+}
+.grad
+{
+    background-color: #043c22af;
+    background:linear-gradient(to left,#032716af,rgba(152, 161, 68, 0.651));
+    padding: 0.4rem;
+    font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: white;
+
+}
+ #submit
+{   
+    font-family: 'Ubuntu','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    height: 3rem;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #FF9800;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #e28103;
+}
+.section
+{
+    margin:1rem;
+    height: 20rem;
+    width: 60%;
+    position:absolute;
+    padding:0rem 0rem;
+    top: 33rem;
+}
+.section p{
+    font-size: 19px;
+    padding-left: 13rem;
+    color: #7e5b2dd3;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    
+}
+h3{
+    font-size: 28px;
+    padding-left: 13rem;
+    color: #7e5b2dd2;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+    
+}
+.section2
+{   display:  flex;
+    margin: 1rem;
+    height: 20rem;
+    width: 100%;
+    position:absolute;
+    justify-content: center;
+    top:59rem;
+}
+.subsec
+{   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:1rem 1rem;
+    
+    height: 19rem;
+    width: 20rem;
+}
+.subsec img{
+    height:100px;
+    width: 100px;
+    border-radius: 100px;
+    margin: 1rem;
+}
+
+.subsec h3{
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem;
+    font-size: 25px;
+    color: #44564b;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+}
+.subsec p
+{
+    margin: 0.3rem;
+    font-size: 17px;
+    color: #7e5b2dd2;
+    font-family: 'Lora', sans-serif;
+    
+}
+
+.halfsec2
+{   background-color: #b6ac99;
+    height: 7rem;
+    width: 45%;
+    position:absolute;
+    padding:0rem 0rem;
+    left:55%;
+    top:90rem;
+    
+    ;
+}
+.halfsec
+{   background-color: #b6ac99;
+    height: 7rem;
+    width: 44%;
+    position:absolute;
+    padding:0rem 0rem;
+    top:90rem;
+   
+}
+.section3
+{  display: flex;
+    flex-direction: column;
+    height: 21rem;
+    width: 100%;
+    position:absolute;
+    padding:0rem 0rem;
+    top:97rem;
+    background-color: #b6ac99;
+}
+.section3 h3{
+    text-align: center;
+    padding: 0rem;
+    margin: 0rem 0rem;
+    margin-top: 0.4rem;
+    font-size: 15px;
+    color: #44564b;
+    font-family: 'Lora', sans-serif;
+    
+}
+.section3 h1
+{
+    text-align: center;
+    padding: 0rem;
+    margin:  0rem;
+    margin-bottom: 0.3rem;
+    font-size: 20px;
+    color: #4a3942;
+    font-family: 'Lora', sans-serif;
+}
+.top
+{
+    color: rgb(223, 216, 216);
+    text-align: center;
+    padding: 0rem;
+    margin:  0rem;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold;
+}
+.bottom
+{
+    color: white;
+    text-align: center;
+    padding: 0rem;
+    margin:  0rem;
+    font-size: 18px;
+
+    font-family: 'Lora', sans-serif;
+    
+}
+#student
+{
+    height: 190px;
+    width: 270px;
+    position: relative;
+    top: 81rem;
+    left: 39.5%;
+}
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 9.5rem;
+    width: 100%;
+    position:absolute;
+    padding:0rem 0rem;
+    top:118rem;
+    background:url("footer.jpg") no-repeat center center/cover;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 0rem;
+    margin:  0.3rem 0rem;
+    font-size: 10px;
+    margin-bottom: 1rem;
+    font-family: 'Lora', sans-serif; 
+}
+.logos
+{   display:flex ;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    top: 1rem;
+   
+
+}
+
+
+#facebook{
+    height:60px;
+    width: 60px;
+}
+#insta{
+    height:60px;
+    width: 60px;
+}
+#linkedin{
+    height:90px;
+    width: 90px;
+    position: relative;
+    bottom: 0.7rem;
+}
+#twitter{
+    height:90px;
+    width: 90px;
+    position: relative;
+    bottom: 0.7rem;
+}
+#whtsapp{
+    height:100px;
+    width:130px;
+    position: relative;
+    bottom: 1.1rem;
+}
+.log{
+    transition:all 1s;
+}
+.log:hover
+{
+    transform: scale(1.2);
+    
+}

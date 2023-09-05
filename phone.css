@@ -1,0 +1,162 @@
+#top ul
+{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:  space-evenly;
+    height: 20rem;
+    position: relative;
+    top: 350%;
+    right: 5%;
+    display: none;
+}
+.nav 
+{
+    position: relative;
+}
+#top p{
+    margin-right:2%;
+}
+.halfsec2
+{   background-color: #b6ac99;
+    height: 7rem;
+    width: 32%;
+    position:relative;
+    padding:0rem 0rem;
+    left:68%;
+    top:65%;
+    
+    
+}
+.halfsec
+{   background-color: #b6ac99;
+    height: 7rem;
+    width: 32%;
+    position:relative;
+    padding:0rem 0rem;
+    top:72%;
+   
+}
+#student
+{
+    height: 190px;
+    width: 270px;
+    position: relative;
+    top: 29%;
+    left: 16%;
+}
+header {
+    flex-direction: column;
+    
+}
+#container
+{
+    top: 25rem;
+    font-size: 50px;
+}
+#decor
+{
+    font-size: 12px;
+}
+#under
+{
+    width:48%;
+}
+#cross{
+    height: 35px;
+    width: 35px;
+    bottom:11.8rem;
+    right: 0rem;
+    
+}
+#cross2{
+    height: 35px;
+    width: 35px;
+    bottom: 7.5rem;
+    right: 3rem;
+    
+}
+#details
+{
+    width: 90%;
+    position: relative;
+    top: 100%;left: 5%;
+}
+.section
+{
+    width: 100%;
+    position: relative;
+    top: 76%;
+    
+}
+.section2
+{ 
+    position: relative;
+    height: 36rem;
+    top: 86%;
+    margin: 0;
+    
+}
+.subsec
+{
+    width: 30%;
+}
+.subsec img{
+    height:50px;
+    width: 50px;
+   
+}
+
+.subsec h3{
+   
+    font-size: 15px;
+    
+}
+.subsec p
+{
+    
+    font-size: 10px;
+   
+    
+}
+.section3
+{
+    position: relative;
+    top: 65%;
+    height: 25rem;
+}
+.section p{
+    padding: 0rem 1rem;
+}
+h3{
+    padding: 0rem 1rem;
+}
+footer{
+    position: relative;top: 52%;
+}
+
+#facebook{
+    height:30px;
+    width: 30px;
+}
+#insta{
+    height:30px;
+    width: 30px;
+}
+#linkedin{
+    height:45px;
+    width: 45px;
+    position: relative;
+    bottom: 0.4rem;
+}
+#twitter{
+    height:45px;
+    width: 45px;
+    position: relative;
+    bottom: 0.3rem;
+}
+#whtsapp{
+    height:50px;
+    width:65px;
+    position: relative;
+    bottom: 0.5rem;
+}
